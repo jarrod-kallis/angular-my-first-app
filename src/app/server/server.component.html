@@ -1,0 +1,10 @@
+<h3
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{
+    funny: getServerStatus() === 'funny',
+    serious: getServerStatus() === 'serious'
+  }"
+  class="server"
+>
+  {{ 'Server' }} with ID {{ id }} is {{ getServerStatus() }}
+</h3>
